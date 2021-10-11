@@ -1,0 +1,115 @@
+<!doctype html>
+    <html>
+        <head>
+            {% load static %}
+            <meta charset='utf-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1'>
+            <title>Inicio</title>
+            <link rel="stylesheet" href="{% static 'core/css/index.css' %}">
+            <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+            <link href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' rel='stylesheet'>
+            <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        </head>
+        <body>
+            <div class="page-content page-container" id="page-content">
+<div class="padding">
+<div class="row container d-flex justify-content-center">
+<div class="col-xl-6 col-md-12">
+<div class="card user-card-full">
+<div class="row m-l-0 m-r-0">
+    <div class="col-sm-4 bg-c-lite-green user-profile">
+        <div class="card-block text-center text-white">
+            <div class="m-b-25"> <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> </div>
+            <h6 class="f-w-600">Alejandro Sánchez</h6>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="card-block">
+            <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Información</h6>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="m-b-10 f-w-600">Correo electronico</p>
+                    <h6 class="text-muted f-w-400">rntng@gmail.com</h6>
+                </div>
+                <div class="col-sm-6">
+                    <p class="m-b-10 f-w-600">Nombre</p>
+                    <h6 class="text-muted f-w-400">Nombre Completo</h6>
+                </div>
+                <div class="col-sm-6">
+                    <p class="m-b-10 f-w-600">Edad</p>
+                    <h6 class="text-muted f-w-400">98</h6>
+                </div>
+                <div class="col-sm-6">
+                    <p class="m-b-10 f-w-600">Fecha de nacimiento</p>
+                    <h6 class="text-muted f-w-400">09/11/1111</h6>
+                </div>
+                <div class="col-sm-6">
+                    <p class="m-b-10 f-w-600">Telefono</p>
+                    <h6 class="text-muted f-w-400">98979989898</h6>
+                </div>
+                <div class="col-sm-6">
+                    <p class="m-b-10 f-w-600">
+                        <a href="{% url 'editar' %}">Editar informacion </a>
+                        
+                    </p>
+                    
+                </div>
+                
+            </div>
+
+            </div>
+            
+        </div>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24434.84954018526!2d-97.73482820475213!3d18.875571338054186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1633725243620!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="container-m">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card"> <i class="fa fa-quote-left u-color"></i>
+                <p>El chico es muy bueno y siempre ofrece comida de buena calidad</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="user-about"> <span class="font-weight-bold d-block">Alexa Carrera</span> <span class="u-color"></span>
+                        <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
+                    </div>
+                    <div class="user-image"> <img src="https://i.imgur.com/UUW3zLx.jpg" class="rounded-circle" width="70"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card"> <i class="fa fa-quote-left u-color"></i>
+                <p>Siempre nos ofrece comida en buen estado</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="user-about"> <span class="font-weight-bold d-block">Sophia Lara</span> <span class="u-color"></span>
+                        <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
+                    </div>
+                    <div class="user-image"> <img src="https://i.imgur.com/o5uMfKo.jpg" class="rounded-circle" width="70"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card"> <i class="fa fa-quote-left u-color"></i>
+                <p>Siempre es muy putual, y nos espera en el lugar indicado</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="user-about"> <span class="font-weight-bold d-block">Miguel Palafox</span> <span class="u-color"></span>
+                        <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
+                    </div>
+                    <div class="user-image"> <img src="https://i.imgur.com/At1IG6H.png" class="rounded-circle" width="70"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+            <script type='text/javascript'></script>
+            </body>
+    </html>

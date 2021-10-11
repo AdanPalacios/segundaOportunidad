@@ -1,0 +1,217 @@
+<!doctype html>
+    <html>
+        <head>
+            {% load static %}
+            <link rel="stylesheet" href="{% static 'core/css/principal.css' %}">
+            <link rel="stylesheet" href="{% static 'core/css/notificaciones.css' %}">
+            <meta charset='utf-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1'>
+            <title>Pantalla-principal</title>
+            <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+            <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+            <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        </head>
+        <body >
+
+            <ul class="nav nav-pills justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Principal</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mensajes</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        <h6 class="m-b-5">
+                            <img class="img-circle" src="https://img.icons8.com/color/36/000000/guest-male.png" alt="User Image">
+                            Noe torres
+                        </h6>
+                        <p class="text-muted m-b-0">Hola, estuvo muy rica tu comida.</p>
+                        <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>hoy a las 11:00 pm</p>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <h6 class="m-b-5">
+                            <img class="img-circle" src="https://img.icons8.com/color/36/000000/guest-male.png" alt="User Image">
+                            Noe torres
+                        </h6>
+                        <p class="text-muted m-b-0">Hola, estuvo muy rica tu comida.</p>
+                        <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>hoy a las 11:00 pm</p>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <h6 class="m-b-5">
+                            <img class="img-circle" src="https://img.icons8.com/color/36/000000/guest-male.png" alt="User Image">
+                            Noe torres
+                        </h6>
+                        <p class="text-muted m-b-0">Hola, estuvo muy rica tu comida.</p>
+                        <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>hoy a las 11:00 pm</p>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <h6 class="m-b-5">
+                            <img class="img-circle" src="https://img.icons8.com/color/36/000000/guest-male.png" alt="User Image">
+                            Noe torres
+                        </h6>
+                        <p class="text-muted m-b-0">Hola, estuvo muy rica tu comida.</p>
+                        <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>hoy a las 11:00 pm</p>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'publicar' %}">Publicar</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Personal</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{% url 'perfil' %}">Informacion Personal</a>
+                      <a class="dropdown-item" href="#">Cuenta</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Salir</a>
+                    </div>
+
+                </li>
+              </ul>
+            <div class="page-content page-container" id="page-content">
+                <div class="padding row">
+                    <div class="row container d-flex justify-content-center">
+                        <div class="col-md-6">
+                            <div class="box box-widget">
+                                <div class="card user-activity-card">
+                                    <div class="card-header">
+                                        <h5>Notificaciones</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="row m-b-25">
+                                            <div class="col-auto p-r-0">
+                                                <div class="u-img"> <img src=" https://i.imgur.com/UIhwGhr.jpg" alt="user image" class="img-radius cover-img"> <img src="https://img.icons8.com/ultraviolet/40/000000/active-state.png" alt="user image" class="img-radius profile-img"> </div>
+                                            </div>
+                                            <div class="col">
+                                                <h6 class="m-b-5">Tomas Roman</h6>
+                                                <p class="text-muted m-b-0">Ha hecho una publicación
+                                                    .</p>
+                                                <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>Hace 24 minutos</p>
+                                            </div>
+                                        </div>
+                                        <div class="row m-b-25">
+                                            <div class="col-auto p-r-0">
+                                                <div class="u-img"> <img src="https://i.imgur.com/rAInTHU.jpg" alt="user image" class="img-radius cover-img"> <img src="https://img.icons8.com/office/16/000000/active-state.png" alt="user image" class="img-radius profile-img"> </div>
+                                            </div>
+                                            <div class="col">
+                                                <h6 class="m-b-5">Sandra Ramirez</h6>
+                                                <p class="text-muted m-b-0">Ha hecho una publicación</p>
+                                                <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>hace 12 horas</p>
+                                            </div>
+                                        </div>
+                                        <div class="row m-b-25">
+                                            <div class="col-auto p-r-0">
+                                                <div class="u-img"> <img src="https://i.imgur.com/rAInTHU.jpg" alt="user image" class="img-radius cover-img"> <img src="https://img.icons8.com/office/16/000000/active-state.png" alt="user image" class="img-radius profile-img"> </div>
+                                            </div>
+                                            <div class="col">
+                                                <h6 class="m-b-5">Juan Sánchez</h6>
+                                                <p class="text-muted m-b-0">Ha hecho una publicación</p>
+                                                <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>ayer a as 4:00 pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="row m-b-25">
+                                            <div class="col-auto p-r-0">
+                                                <div class="u-img"> <img src=" https://i.imgur.com/UIhwGhr.jpg" alt="user image" class="img-radius cover-img"> <img src="https://img.icons8.com/ultraviolet/40/000000/active-state.png" alt="user image" class="img-radius profile-img"> </div>
+                                            </div>
+                                            <div class="col">
+                                                <h6 class="m-b-5">Diego Vazquez</h6>
+                                                <p class="text-muted m-b-0">Ha hecho una publicacción.</p>
+                                                <p class="text-muted m-b-0"><i class="mdi mdi-timer feather icon-clock m-r-10"></i>hoy a las 11:00 pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-center"> <a href="#!" class="b-b-primary text-primary" data-abc="true">Ver todas las notificaciones</a> </div>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box box-widget">
+                                <div class="box-header with-border">
+                                    <div class="user-block"> 
+                                        <img class="img-circle" src="https://img.icons8.com/color/36/000000/guest-male.png" alt="User Image"> 
+                                        <span class="username">
+                                            <a href="{% url 'info' %}" data-abc="true">Alejandro Sánchez</a>
+                                        </span> 
+                                        <span class="description">Public - 7:30 PM Today</span> 
+                                    </div>
+                                    <div class="box-tools"> 
+                                        <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read"> 
+                                            <i class="fa fa-circle-o"></i>
+                                        </button> 
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                            <i class="fa fa-minus"></i> 
+                                        </button> 
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                            <i class="fa fa-times"></i>
+                                        </button> 
+                                    </div>
+                                </div>
+                                <div class="box-body"> <img class="img-responsive pad" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUtwVs67jXfVYhe1TFuSdungfKMrBmBeSQQ&usqp=CAU" alt="Photo">
+                                    <p>Regalo comida en buen estado</p> <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Compartir</button> <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Me encanta</button> <span class="pull-right text-muted">127 me encanta - 3 comentarios</span>
+                                </div>
+                                <div class="box-footer box-comments">
+                                    <div class="box-comment"> <img class="img-circle img-sm" src="https://img.icons8.com/office/36/000000/person-female.png" alt="User Image">
+                                        <div class="comment-text"> <span class="username"> Nancy Salazar <span class="text-muted pull-right">8:03 PM Today</span> </span> Sigue disponible? </div>
+                                    </div>
+                                    <div class="box-comment"> <img class="img-circle img-sm" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="User Image">
+                                        <div class="comment-text"> <span class="username"> Diego Róman  <span class="text-muted pull-right">8:03 PM Today</span> </span> Me lo puede obsequiar a mi?. </div>
+                                    </div>
+                                </div>
+                                <div class="box-footer">
+                                    <form action="#" method="post"> <img class="img-responsive img-circle img-sm" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="Alt Text">
+                                        <div class="img-push"> <input type="text" class="form-control input-sm" placeholder="Press enter to post comment"> </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="box box-widget">
+                                <div class="box-header with-border">
+                                    <div class="user-block"> <img class="img-circle" src="https://img.icons8.com/color/36/000000/guest-male.png" alt="User Image"> <span class="username"><a href="#" data-abc="true">Alejandro Sánchez</a></span> <span class="description">Public - 7:30 PM Today</span> </div>
+                                    <div class="box-tools"> <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read"> <i class="fa fa-circle-o"></i></button> <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i> </button> <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> </div>
+                                </div>
+                                <div class="box-body"> <img class="img-responsive pad" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUtwVs67jXfVYhe1TFuSdungfKMrBmBeSQQ&usqp=CAU" alt="Photo">
+                                    <p>Regalo comida en buen estado</p> <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Compartir</button> <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Me encanta</button> <span class="pull-right text-muted">127 me encanta - 3 comentarios</span>
+                                </div>
+                                <div class="box-footer box-comments">
+                                    <div class="box-comment"> <img class="img-circle img-sm" src="https://img.icons8.com/office/36/000000/person-female.png" alt="User Image">
+                                        <div class="comment-text"> <span class="username"> Nancy Salazar <span class="text-muted pull-right">8:03 PM Today</span> </span> Sigue disponible? </div>
+                                    </div>
+                                    <div class="box-comment"> <img class="img-circle img-sm" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="User Image">
+                                        <div class="comment-text"> <span class="username"> Diego Róman  <span class="text-muted pull-right">8:03 PM Today</span> </span> Me lo puede obsequiar a mi?. </div>
+                                    </div>
+                                </div>
+                                <div class="box-footer">
+                                    <form action="#" method="post"> <img class="img-responsive img-circle img-sm" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="Alt Text">
+                                        <div class="img-push"> <input type="text" class="form-control input-sm" placeholder="Press enter to post comment"> </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                        <div>
+                            
+                            
+                            
+                        </div>
+                </div>
+            </div>
+            <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+            <script type='text/javascript'></script>
+            </body>
+        </html>
+
+
+
+
+
+
+
+                           
+                                                        
+                            

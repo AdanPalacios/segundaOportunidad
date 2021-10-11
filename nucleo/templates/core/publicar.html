@@ -1,0 +1,66 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                {% load static %}
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Formulario-registro</title>
+                                <link rel="stylesheet" href="{% static 'core/css/registro.css' %}">
+                                <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='' rel='stylesheet'>
+                                <script type='text/javascript' src=''></script> 
+                            </head>
+                                <body oncontextmenu='return false' class='snippet-body'>
+                                <div class="wrapper rounded bg-white">
+    <div class="h3">Publicar</div>
+    <div class="form">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3"> <label>Titulo</label> <input type="text" class="form-control" required> </div>
+            <div class="col-md-6 mt-md-0 mt-3">
+                 <label>Categoria</label> 
+                 <select name="categoria" id="">
+                     <option value="">Comida</option>
+                     <option value="">Bebida</option>
+                </select> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3"> <label>Fecha de caducidad aprox.</label> <input type="date" class="form-control" required> </div>
+            <div class="col-md-6 mt-md-0 mt-3"> <label>Genero</label>
+                <div class="d-flex align-items-center mt-2"> 
+                    <label class="option"> 
+                        <input type="radio" name="radio">Hecho en casa <span class="checkmark"></span> </label>
+                         <label class="option ms-4"> <input type="radio" name="radio">Producto comprado 
+                            <span class="checkmark"></span> 
+                        </label> 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3"> 
+                <label>Descripcion</label> 
+                <textarea name="textarea" rows="10" cols="50">Pequeña descripcion del articulo</textarea>
+            </div>
+           
+        </div >
+        <div>
+            <label>Imagen o Foto</label>
+            <div class="box-body"> 
+                <img class="img-responsive pad" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUtwVs67jXfVYhe1TFuSdungfKMrBmBeSQQ&usqp=CAU" alt="Photo">
+                <input type="file" name="imagefile" accept="image/jpeg, image/png">
+                 <button type="button" class="btn btn-default btn-xs">
+                      Compartir
+                </button> 
+               
+        
+            </div>
+
+        </div>
+        <div class="btn btn-primary mt-3">Publicar</div>
+        
+    </div>
+</div>
+                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+                                <script type='text/javascript'></script>
+                                </body>
+                            </html>
